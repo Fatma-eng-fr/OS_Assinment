@@ -3,6 +3,7 @@ import time        # importing the time module
 
 # Two shared resources (locks)
 resource_a = threading.Lock()
+
 resource_b = threading.Lock()
 
 def thread_function_1():
@@ -43,4 +44,5 @@ thread2.start()
 
 # Wait for both threads to complete
 thread1.join()
+
 thread2.join()
