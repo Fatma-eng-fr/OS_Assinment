@@ -14,7 +14,8 @@ def thread_function_1():
         # Simulate work
         time.sleep(1)
 
-        print("Thread 1 waiting for resource B")
+        print("Thread 1 waiting for resource B") 
+        
 
         # Now tries to lock resource B
         with resource_b:
@@ -46,3 +47,4 @@ thread2.start()
 thread1.join()
 
 thread2.join()
+
