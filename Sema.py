@@ -3,6 +3,7 @@ import time
 
 examinationroom = threading.Semaphore(1)
 
+
 def enter_examinationroom(num):
     global examinationroom
     print(f"Patient {num} is waiting for his turn\n")
@@ -22,4 +23,5 @@ for i in range(10):
     t.start()
 
 for t in Patient:
+
     t.join()
